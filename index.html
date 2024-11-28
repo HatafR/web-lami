@@ -1,0 +1,584 @@
+Berikut adalah penjelasan dari kode HTML di atas dengan komentar yang ditambahkan:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Tag dasar untuk mendefinisikan dokumen HTML -->
+      <meta charset="utf-8"> <!-- Mengatur karakter encoding untuk halaman web -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Menginstruksikan browser untuk merender halaman dengan menggunakan mesin rendering terbaru yang tersedia -->
+      <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mengatur viewport agar sesuai dengan lebar layar perangkat, membuat desain lebih responsif -->
+
+      <!-- Mobile meta tags untuk memastikan responsivitas halaman pada perangkat mobile -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1"> <!-- Mengatur skala awal halaman dan membatasi zoom pengguna -->
+
+      <!-- Metadata untuk halaman web -->
+      <title>Langkung Migunani</title> <!-- Judul halaman yang muncul di tab browser -->
+      <meta name="keywords" content=""> <!-- Kata kunci untuk SEO, saat ini kosong -->
+      <meta name="description" content=""> <!-- Deskripsi singkat halaman untuk SEO, saat ini kosong -->
+      <meta name="author" content=""> <!-- Informasi tentang penulis halaman, saat ini kosong -->
+
+      <!-- Memuat file CSS Bootstrap untuk styling dasar -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- Memuat file CSS khusus untuk style halaman -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Memuat file CSS untuk membuat halaman responsif -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Menambahkan favicon, ikon kecil yang muncul di tab browser -->
+      <link rel="icon" href="images/logo.jpg" type="image/gif" />
+      <!-- Memuat CSS khusus untuk scrollbar custom -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Memuat CSS Font Awesome versi 4.0.3 untuk ikon -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- Memuat file CSS untuk plugin Owl Carousel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- Memuat CSS Fancybox untuk fitur gallery atau modal gambar -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- Awal bagian header -->
+      <div class="header_section">
+         <div class="container-fluid"> <!-- Membuat container yang fleksibel penuh di dalam header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Navbar yang responsif dengan kelas Bootstrap -->
+               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div> <!-- Logo dan link ke halaman utama -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Menampilkan atau menyembunyikan navbar pada perangkat kecil -->
+                  <ul class="navbar-nav mr-auto"> <!-- Daftar navigasi utama -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a> <!-- Link ke halaman utama -->
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">Layanan</a> <!-- Link ke halaman layanan -->
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a> <!-- Link ke halaman tentang -->
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a> <!-- Link ke halaman toko -->
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a> <!-- Link ke halaman kontak -->
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0"> <!-- Bagian yang berisi informasi kontak -->
+                     <h1 class="call_text">Hubungi: +6287738033339</h1> <!-- Menampilkan nomor telepon -->
+                  </form>
+                  <div class="search_icon"> <!-- Ikon pencarian di navbar -->
+                     <ul>
+                        <li><a href="#"><img src="images/search-icon.png"></a></li> <!-- Link untuk pencarian -->
+                        <li><a href=""></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- Akhir bagian header -->
+
+      <!-- Awal bagian banner -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div id="costum_slider" class="carousel slide" data-ride="carousel"> <!-- Slider carousel untuk banner -->
+               <div class="carousel-inner"> <!-- Bagian dalam carousel yang berisi item-item slide -->
+                  <div class="carousel-item active">
+                     <h1 class="furniture_text">LANGKUNG MIGUNANI</h1> <!-- Judul utama di slide pertama -->
+                     <p class="there_text">Menjadi penyedia komoditas udang dan pakan udang yang lengkap, dan berkualitas</p> <!-- Deskripsi di slide pertama -->
+                     <div class="contact_bt_main">
+                        <div class="contact_bt"><a href="contact.html">Contact Us</a></div> <!-- Tombol untuk menuju halaman kontak -->
+                     </div>
+                  </div>
+                  <!-- Slide kedua dengan konten yang sama -->
+                  <div class="carousel-item">
+                     <h1 class="furniture_text">LANGKUNG MIGUNANI</h1>
+                     <p class="there_text">Menjadi penyedia komoditas udang dan pakan udang yang lengkap, dan berkualitas</p>
+                     <div class="contact_bt_main">
+                        <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                     </div>
+                  </div>
+                  <!-- Slide ketiga dengan konten yang sama -->
+                  <div class="carousel-item">
+                     <h1 class="furniture_text">LANGKUNG MIGUNANI</h1>
+                     <p class="there_text">Menjadi penyedia komoditas udang dan pakan udang yang lengkap, dan berkualitas</p>
+                     <div class="contact_bt_main">
+                        <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tombol kontrol untuk slide sebelumnya -->
+               <a class="carousel-control-prev" href="#costum_slider" role="button" data-slide="prev">
+               <i class=""><img src="images/left-arrow.png"></i>
+               </a>
+               <!-- Tombol kontrol untuk slide berikutnya -->
+               <a class="carousel-control-next" href="#costum_slider" role="button" data-slide="next">
+               <i class=""><img src="images/right-arrow.png"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- Akhir bagian banner -->
+
+      <!-- Awal bagian layanan -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <h1 class="services_taital">Layanan Kami</h1> <!-- Judul bagian layanan -->
+            <p class="many_taital">Berbagai Layanan Yang Kami Tawarkan </p> <!-- Deskripsi singkat bagian layanan -->
+            <div class="services_section2 layout_padding">
+               <div class="row">
+                  <!-- Kolom pertama layanan -->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="icon_1"><img src="images/icon-1.png"></div> <!-- Ikon layanan pertama -->
+                     <h2 class="furnitures_text">Growing</h2> <!-- Judul layanan pertama -->
+                     <p class="dummy_text">Fokus pada bisnis yang berkesinambungan untuk menghasilkan nutrisi sempurna bagi para konsumen</p> <!-- Deskripsi layanan pertama -->
+                     <div class="read_bt_main">
+                        <div class="read_bt"><a href="#">Read More</a></div> <!-- Tombol "Read More" untuk layanan pertama -->
+                     </div>
+                  </div>
+                  <!-- Kolom kedua layanan -->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="icon_1"><img src="images/icon-2.png"></div> <!-- Ikon layanan kedua -->
+                     <h2 class="furnitures_text">Feeding The Future</h2> <!-- Judul layanan kedua -->
+                     <p class="dummy_text">Produk udang berkualitas tinggi dimulai dari pakan yang sehat & didukung oleh proses budidaya yang benar</p> <!-- Deskripsi layanan kedua -->
+                     <div class="read_bt_main">
+                        <div class="read_bt"><a href="#">Read More</a></div> <!-- Tombol "Read More" untuk layanan kedua -->
+                     </div>
+                  </div>
+      <!-- Kolom ketiga layanan -->
+      <!-- services section end -->
+       
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1 class="about_text">Tentang Kami</h1>
+                  <p class="lorem_text">CV. Langkung Migunani adalah salah satu perusahaan yang terjun pada 
+                     usaha atau bisnis budidaya udang Vaname di Indonesia. Perusahaan ini 
+                     merupakan distributor komoditas udang Vaname dan pakan udang yang berlokasi 
+                     di Bantul, Daerah Istimewa Yogyakarta. Perusahaan ini sudah berdiri sejak tahun 
+                     2015, dan resmi berbadan hukum Persekutuan Komanditer (CV) sejak 2021.
+                     </p>
+                  <div class="read_bt1"><a href="#">Read More</a></div>
+               </div>
+               <div class="col-md-6">
+                  <div class="image_1"><img src="images/img-1.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- furnitures section start -->
+      <div class="furnitures_section layout_padding">
+         <div class="container">
+            <h1 class="our_text">Produk Kami</h1>
+            <p class="ipsum_text">Kami merupakan perusahaan budidaya udang serta distributor pakan udang </p>
+            <div class="furnitures_section2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="container_main">
+                        <img src="images/img-2.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                           <a href="http://localhost/belanja/belanja-lami/user/index.php" class="icon" title="User Profile">
+                           <i class="fa fa-search"></i>
+                           </a>
+                        </div>
+                     </div>
+                     <h3 class="temper_text">Pakan Udang</h3>
+                     <p class="dololr_text">Produk udang berkualitas tinggi didukung oleh proses budidaya yang benar dan pakan berkualitas tinggi. Kami menyediakan produk pakan berkualitas tinggi, serta pendampingan penerapan SOP pakan, yang dapat memberikan pertumbuhan optimal</p>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="container_main">
+                        <img src="images/img-3.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                           <a href="http://localhost/belanja/belanja-lami/user/index.php" class="icon" title="User Profile">
+                           <i class="fa fa-search"></i>
+                           </a>
+                        </div>
+                     </div>
+                     <h3 class="temper_text">Udang Vaname</h3>
+                     <p class="dololr_text">Udang vaname (Littopenaeus Vannamei) merupakan udang yang sangat cocok untuk dibudidayakan karena memiliki tingkat keberlangsungan hidup yang tinggi dan memiliki kandungan gizi yang sangat baik</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- furnitures section end -->
+      <!-- who section start -->
+      <div class="who_section layout_padding">
+         <div class="container">
+            <h1 class="who_taital">Langkung Migunani</h1>
+            <h4 class="designer_text">Visi & Misi</h4>
+            <p class="lorem_ipsum_text">Menjadi penyedia komoditas udang dan pakan udang yang lengkap, dan 
+               berkualitas, Menjalin kerjasama dengan mitra bisnis yang saling menguntungkan dan 
+                  bertanggung jawab, Menjalin kerjasama dan hubungan baik dengan pemasok dengan tanggung 
+                  jawab, dan saling menguntungkan, Memberikan pelayanan yang terbaik kepada pelanggan dengan 
+                  mengutamakan produk yang berkualitas, Bertanggung jawab serta menjalin hubungan baik dengan warga sekitar 
+                  dalam menjalankan usaha di lingkungan masyarakat
+               </p>
+         </div>
+         <div class="get_bt_main">
+            <div class="get_bt"><a href="#">Read More</a></div>
+         </div>
+      </div>
+      <!-- who section end -->
+      <!-- projects section start -->
+      <div class="projects_section layout_padding">
+         <div class="container">
+            <h1 class="our_text">Bidang Usaha</h1>
+            <p class="ipsum_text">Budidaya Udang Vaname & Distributor Pakan Udang Berkualitas</p>
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="projects_section2">
+                        <div class="container_main2">
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Pakan Udang</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Tambak Udang</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-6.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Udang Vaname</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="projects_section2">
+                        <div class="container_main1">
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Pakan Udang</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Tambak Udang</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-6.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Udang Vaname</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="projects_section2">
+                        <div class="container_main1">
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Pakan Udang</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Tambak Udang</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="container_main1">
+                                    <img src="images/img-6.png" alt="Avatar" class="image" style="width:100%">
+                                    <h1 class="modern_text">Udang Vaname</h1>
+                                    <div class="middle">
+                                       <div class="text">VIEW MORE</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- projects section end -->
+      <!-- client section start -->
+      <div class="clients_section layout_padding">
+         <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <h1 class="client_text">Testimoni Pelanggan</h1>
+                     <p class="ipsum_text">Yang Mereka Katakan Tentang Kami</p>
+                     <div class="clients_section2 layout_padding">
+                        <div class="client_1">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-7.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Slamet</h1>
+                                 <p class="dolor_ipsum_text">Produk Pakan Yang disediakan oleh perusahaan ini berkualitas sangat baik, sehingga dapat menghasilkan udang yang bergizi</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="client_2">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-8.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Hadjiono</h1>
+                                 <p class="dolor_ipsum_text">Perusahaan ini menyediakan berbagai macam pilihan produk pakan udang yang memiliki kadar gizi tinggi sehingga sangat baik untuk udang</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <h1 class="client_text">Testimoni Pelanggan</h1>
+                     <p class="ipsum_text">Yang Mereka Katakan Tentang Kami</p>
+                     <div class="clients_section2 layout_padding">
+                        <div class="client_1">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-7.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Budianto</h1>
+                                 <p class="dolor_ipsum_text">Produk Pakan Yang disediakan oleh perusahaan ini berkualitas sangat baik, sehingga dapat menghasilkan udang yang bergizi</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="client_2">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-8.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Riyadi</h1>
+                                 <p class="dolor_ipsum_text">Produk Pakan Yang disediakan oleh perusahaan ini berkualitas sangat baik, sehingga dapat menghasilkan udang yang bergizi</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <h1 class="client_text">Testimoni Pelanggan</h1>
+                     <p class="ipsum_text">Yang Mereka Katakan Tentang Kami</p>
+                     <div class="clients_section2 layout_padding">
+                        <div class="client_1">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-7.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Jokowi</h1>
+                                 <p class="dolor_ipsum_text">Produk Pakan Yang disediakan oleh perusahaan ini berkualitas sangat baik, sehingga dapat menghasilkan udang yang bergizi</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="client_2">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-8.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Komang</h1>
+                                 <p class="dolor_ipsum_text">Produk Pakan Yang disediakan oleh perusahaan ini berkualitas sangat baik, sehingga dapat menghasilkan udang yang bergizi</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <h1 class="client_text">Testimoni Pelanggan</h1>
+                     <p class="ipsum_text">Yang Mereka Katakan Tentang Kami</p>
+                     <div class="clients_section2 layout_padding">
+                        <div class="client_1">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-7.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Pujiono</h1>
+                                 <p class="dolor_ipsum_text">Produk Pakan Yang disediakan oleh perusahaan ini berkualitas sangat baik, sehingga dapat menghasilkan udang yang bergizi</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="client_2">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="image_7"><img src="images/img-8.png"></div>
+                                 <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                              </div>
+                              <div class="col-sm-9">
+                                 <h1 class="loksans_text">Sidik</h1>
+                                 <p class="dolor_ipsum_text">Perusahaan ini menyediakan berbagai macam produk pakan yang sangat berkulitas, sehingga dapat menghasilkan komoditas udang yang baik</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- client section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1 class="contact_text">CONTACT US</h1>
+                  <div class="mail_sectin">
+                     <input type="text" class="email-bt" placeholder="Name" name="Name">
+                     <input type="text" class="email-bt" placeholder="Email" name="Name">
+                     <input type="text" class="email-bt" placeholder="Phone Number" name="Name">
+                     <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Massage"></textarea>
+                     <div class="send_bt"><a href="#">SEND</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="image_9"><img src="images/img-9.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="fooer_logo"><img src="images/footer-logo.png"></div>
+                  <p class="footer_lorem_text"> CV. LANGKUNG MIGUNANI
+                     Alamat Widoro, Bangunharjo, Kec. Sewon, 
+                     Kabupaten Bantul,
+                     Daerah Istimewa Yogyakarta 55185
+                     Indonesia
+                     (+62) 87738033339
+                  </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">Berkembang Bersama</h1>
+                  <p class="footer_lorem_text"> CV. Langkung Migunani
+                     selalu berusaha untuk memasukkan nilai dan manfaat 
+                     dari tindakan tanggung jawab sosial perusahaan sebagai bagian 
+                     dari operasi perusahaan secara keseluruhan.
+                  </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">INFORMATION</h1>
+                  <p class="footer_lorem_text1">Tentang Kami<br>
+                     Beranda<br>
+                     Layanan<br>
+                     Tentang Kami<br>
+                     Shop<br>
+                     Contact
+                  </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">Visi Misi</h1>
+                  <p class="footer_lorem_text">Menjadi penyedia komoditas udang dan pakan udang yang lengkap, 
+                     dan berkualitas, Menjalin kerjasama 
+                     dengan mitra bisnis yang saling menguntungkan dan 
+                     bertanggung jawab
+                  </p>
+               </div>
+            </div>
+            <div class="input-group mb-3">
+               <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+               <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2"><a href="#">Subscribe</a></span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+      <div class="container">
+         <div class="social_icon">
+            <ul>
+               <li><a href="#"><img src="images/fb-icon.png"></a></li>
+               <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+               <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+               <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+            </ul>
+         </div>
+         <p class="copyright_text">Copyright © 2024 CV Langkung Migunani. All Right Reserved. <a href="https://langkungmigunani.com">Langkung Migunani</a></p>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+   </body>
+</html>
