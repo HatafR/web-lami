@@ -1,2 +1,3 @@
-# web-lami
-Page Lami
+# Web-Lami
+
+Rename image >> images
